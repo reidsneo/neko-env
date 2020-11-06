@@ -1,0 +1,25 @@
+{
+    "name": "neko/env",
+    "description": "neko framework environment variables from `.env` engine",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Reids",
+            "email": "reids@neoblackant.org"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3 || ^8.0",
+        "ext-pcre": "*",
+        "symfony/polyfill-ctype": "^1.17",
+        "symfony/polyfill-mbstring": "^1.17",
+        "symfony/polyfill-php80": "^1.17"
+    },
+    "autoload": {
+        "psr-4": {
+            "Neko\\Env\\Dotenv\\": "src/",
+            "Neko\\Env\\ResultType\\": "src/ResultType/",
+            "Neko\\Env\\PhpOption\\": "src/PhpOption/"
+        }
+    }
+}
